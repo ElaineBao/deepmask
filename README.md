@@ -118,6 +118,22 @@ There are two ways to evaluate a model on the COCO dataset.
    th evalPerImage.lua /path/to/trained/deepmask-or-sharpmask/
    ```
 
+## 生成region proposals:
+- 输入一张图片，输出带segmentation结果的图片：
+
+```
+th computeProposals_singleimg.lua /path/to/trained/model/ -img /path/to/test/image
+```
+- 输入一个list，输出list中所有图片的region proposals，保存在txt里：
+
+```
+th computProposals.lua /path/to/trained/model/ -imglist /path/to/image/list -datapath /path/to/img/data/
+```
+- 存放region proposals的txt转换成pkl文件：
+
+```
+python test2pkl.py /region/proposal/txt /save/to/pkl/path
+
 
 # Precomputed Proposals
 
