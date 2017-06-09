@@ -133,7 +133,7 @@ th computProposals.lua /path/to/trained/model/ -imglist /path/to/image/list -dat
 
 ```
 python test2pkl.py /region/proposal/txt /save/to/pkl/path
-
+```
 
 # Precomputed Proposals
 
