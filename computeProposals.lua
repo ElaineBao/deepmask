@@ -36,7 +36,7 @@ cmd:option('-gpu', 1, 'gpu device')
 cmd:option('-np', 500,'number of proposals to save in test')
 cmd:option('-si', -2.5, 'initial scale')
 cmd:option('-sf', .5, 'final scale')
-cmd:option('-ss', 2., 'scale step')
+cmd:option('-ss', .5, 'scale step')
 cmd:option('-dm', false, 'use DeepMask version of SharpMask')
 
 local config = cmd:parse(arg)
